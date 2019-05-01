@@ -91,4 +91,4 @@ app.post('/api/pieces', function(request, response) {
 	});
 });
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
