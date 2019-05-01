@@ -3,7 +3,7 @@ const frisby = require('frisby');
 const { Joi } = frisby;
 
 //---------------------------------------------------------------------------------------------------
-// Get endpoint (individual resource) unit tests
+// GET endpoint (individual resource) unit tests
 //---------------------------------------------------------------------------------------------------
 
 it('should return a status code of 404 when it tries to return a piece that does not exist', () => {
@@ -23,7 +23,7 @@ it('should return a status code of 200 when an existing piece is requested', () 
 });
 
 //---------------------------------------------------------------------------------------------------
-// Get endpoint (collection of resources) unit tests
+// GET endpoint (collection of resources) unit tests
 //---------------------------------------------------------------------------------------------------
 
 it('should return a status code of 200 when all pieces are requested', () => {
@@ -39,7 +39,7 @@ it('should return a status code of 200 when all pieces are requested', () => {
 })
 
 //---------------------------------------------------------------------------------------------------
-// Post endpoint unit tests
+// POST endpoint unit tests
 //---------------------------------------------------------------------------------------------------
 
 it('should return a status code of 200 when a piece is added successfully', () => {
@@ -78,7 +78,7 @@ it('should return a status of 422 when there are validation errors', () => {
 });
 
 //---------------------------------------------------------------------------------------------------
-// Delete endpoint unit tests
+// DELETE endpoint unit tests
 //---------------------------------------------------------------------------------------------------
 
 it('should return a 404 error when deleting a piece that does not exist', () => {
@@ -94,7 +94,7 @@ it('should return a 204 error when deleting an existing piece', () => {
 });
 
 //---------------------------------------------------------------------------------------------------
-// Patch endpoint unit tests
+// PATCH endpoint unit tests
 //---------------------------------------------------------------------------------------------------
 
 it('should return a status code of 404 when it tries to edit a piece that does not exist', () => {

@@ -38,6 +38,9 @@ module.exports = sequelize.define('piece', {
 			notEmpty: {
 				args: true,
 				msg: "Category is required"
+			}, isNumeric: {
+				args: true,
+				msg: "Category must be numeric"
 			}
 		}
 	}
